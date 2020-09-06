@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+#apDiv1 ,#apDiv2{
+	height:15px;
+	cursor:pointer;
+	overflow: hidden;
+	float:left;
+	margin-left:10px;
+	list-style-type: none;
+	border: 1px solid #CCCCCC;
+	padding-top: 5px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #666666;
+}
+li a{
+	font-size: 12px;
+	color: #0000FF;
+	text-decoration: none;
+	font-weight: normal;
+}
+li a:hover{
+	color: #FF3333;
+}
+</style>
+<script>
+    function Event(n,e){
+        if(e == "true"){
+            document.getElementById(n.id).style.overflow="visible";
+        }else{
+            document.getElementById(n.id).style.overflow="hidden";
+        }
+    }
+    </script>
+<body>
+    
+
+    <ul id="apDiv1" onmouseover="Event(this,'true');" onmouseout="Event(this,'');">
+        <li>梅問題</li>
+        <li><a href="http://www.minwt.com/">生活網</a></li>
+        <li><a href="http://www.minwt.com/doc">教學網</a></li>
+        <li><a href="http://www.minwt.com/tools">工具網</a></li>
+    </ul>
+
+</body>
+</html>
