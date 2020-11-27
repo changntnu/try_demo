@@ -1,4 +1,4 @@
-# chapter2
+# chapter-2
 
 ## 第二章
 
